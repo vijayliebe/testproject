@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Project Lists :
+  ul
+  each val, index in pdetails
+    div
+     a(href='#{val[Object.keys(val)[3]]}')  #{val[Object.keys(val)[1]]} - #{val[Object.keys(val)[2]]} 
+
+        
+       
+     
+ 
+
